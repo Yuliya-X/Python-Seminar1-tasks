@@ -10,14 +10,6 @@ col = int(input("Сколько долек шоколада по вертика�
 piece = int(input("Сколько долек шоколада нужно отломить? - "))
 
 chocolateBar = row * col
-# не учла разлом по вертикали!!!!!!!!!
-# if (piece % 2 == 0) and (piece < chocolateBar):
-#     print("yes")
-# elif piece < chocolateBar and (row == 1 or col == 1):
-#     print("yes")
-# else:
-#     print("no")
-
 if (piece < chocolateBar) and ((piece % row == 0) or (piece % col == 0)):
     print("yes")
 else:
